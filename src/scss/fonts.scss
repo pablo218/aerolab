@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap');
+
+@import './variables/colors.scss';
+
+.titles_{
+    &.l1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 200px;
+        text-transform: uppercase;
+        color: $titlesBlack;
+        line-height: 80%;
+    }
+}
+
+.text_ {
+    &.l1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        color: $thor;
+        text-transform: uppercase;
+        line-height: 150%;
+    }
+}
