@@ -10,6 +10,7 @@
     "@types/node": "^16.11.26",
     "@types/react": "^18.0.3",
     "@types/react-dom": "^18.0.0",
+    "apisauce": "^2.1.5",
     "i18next": "^21.6.16",
     "i18next-browser-languagedetector": "^6.1.4",
     "node-sass": "^7.0.1",
