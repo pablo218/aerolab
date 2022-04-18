@@ -16,7 +16,6 @@ interface ProductCardProps {
 	prodId: string;
 	getMessage: (type: string, data?: string) => void;
 }
-const points = 100;
 
 export const ProductCard = ({
 	image,
@@ -26,7 +25,7 @@ export const ProductCard = ({
 	prodId,
 	getMessage,
 }: ProductCardProps) => {
-	const { removePoints } = useContext(PointsContext);
+	const { points, removePoints } = useContext(PointsContext);
 	const [buttonMessage, setButtonMessage] = useState('name');
 	const { sendRequest, loading } = useRequest(
 		postRedeems,
