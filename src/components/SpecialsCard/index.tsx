@@ -18,7 +18,11 @@ export const SpecialsCard = ({ className, cardType }: SpecialCardProps) => {
 			<div className={styles.cardFooter}>
 				<div className={styles.titleContainer}>
 					<div>
-						<img src={card.icon} alt={`${card.card}-icon`} />
+						<img
+							src={card.icon}
+							alt={`${card.card}-icon`}
+							className={styles.titleIcon}
+						/>
 					</div>
 					<h1 className={`${styles.cardTitle} titles l3`}>
 						{i18next.t<string>(`${card.card}:title`)}

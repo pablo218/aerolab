@@ -4,7 +4,9 @@
 .header {
     background-image: url( '/assets/illustrations/single-wave-pattern.svg');
     width: 100%;
+    text-align: center;
 }
+
 
 .container {
     @include grid-width;
@@ -15,10 +17,24 @@
     padding: 0 80px 230px 80px;
 }
 
+@media screen and (max-width: 1024px) {
+    .container{
+     display: flex;
+     flex-direction: column;
+     margin: 0 auto;
+   }
+ }
+
 .leftSide {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+    .leftSide {
+        width: 289px;
+        margin: 0 auto
+    }
 }
 
 .title {
@@ -54,15 +70,32 @@
     align-items: center;
 }
 
+@media screen and (max-width: 1024px) {
+    .imageContainer{
+        background: none;
+        margin-top: 200px;
+    }
+}
+
+
 .hero {
     width: 122%;
 }
 
 .specials {
     @include specials-bg-section;
-    height: 528px;
+    height: 656px;
     width: 100%;
 }
+@media screen and (max-width: 1024px) {
+    .specials {
+        align-items: flex-end;
+        display: flex;
+        padding: 32px 17px;
+        justify-content: center;
+    }
+}
+
 
 .cardsContainer {
     @include grid-width;
@@ -73,15 +106,38 @@
     position: relative;
 }
 
+
 .browse {
     transform: translate(75px, 29px) rotate(-3deg)
 }
+@media screen and (max-width: 1024px) {
+    .browse {
+        transform: none
+    }
+}
+
 
 .choose {
     z-index: 2;
+}
+@media screen and (max-width: 1024px) {
+    .choose {
+        transform: none;
+    }
 }
 
 .enjoy {
     transform: translate(-75px, 29px) rotate(3deg);
     z-index: 3;
 }
+@media screen and (max-width: 1024px) {
+    .enjoy {
+        transform: none
+    }
+
+    .button {
+        height: 64px;
+        width: 303px;
+    }
+}
+

@@ -7,11 +7,23 @@
     width: 348px;
 }
 
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 311.67px;
+    }
+}
+
 .card {
     border: 1px solid $light3;
     border-radius: 16px;
     margin-bottom: 16px;
     width: 348px;
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 311.67px;
+    }
 }
 
 .product {
@@ -56,4 +68,11 @@
         border: 1px solid red;
         display: inline;
     }
+}
+
+@media screen and (max-width: 1024px) {
+.button {
+    height: 59px;
+    width: 311.67px;
+}
 }

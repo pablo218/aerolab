@@ -23,14 +23,16 @@ export const FilterOrderBar = ({
 }: FilterOrderBarProps) => {
 	return (
 		<div className={styles.FilterOrderBar}>
-			<CustomSelect
-				categories={categories}
-				setCategorieSelected={setCategorieSelected}
-			/>
-			<CustomOptionGroup
-				orderSelected={orderSelected}
-				oderHandler={oderHandler}
-			/>
+			<div className={styles.filters}>
+				<CustomSelect
+					categories={categories}
+					setCategorieSelected={setCategorieSelected}
+				/>
+				<CustomOptionGroup
+					orderSelected={orderSelected}
+					oderHandler={oderHandler}
+				/>
+			</div>
 			<Pager paginationHandler={paginationHandler} page={page} />
 		</div>
 	);

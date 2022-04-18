@@ -8,3 +8,21 @@
     justify-content:flex-start;
     align-items: center;
 }
+
+@media screen and (max-width: 1024px) {
+    .FilterOrderBar {
+        align-items: flex-start;
+        padding: 0 27px;
+        justify-content:space-between;
+    }
+}
+
+.filters {
+    display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+    .filters {
+        flex-direction: column;
+    }
+}

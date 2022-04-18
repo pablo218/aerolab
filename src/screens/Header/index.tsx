@@ -42,7 +42,7 @@ export const Header = () => {
 							{i18next.t<string>('Home:description')}
 						</p>
 						<Link
-							className="m-top-9 btn btn-xxl btn-hover btn-normal"
+							className={`m-top-9 btn btn-xxl btn-hover btn-normal ${styles.button}`}
 							to="products"
 							smooth={true}
 							duration={1000}

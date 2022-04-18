@@ -10,6 +10,13 @@
     height: 676px;
 }
 
+@media screen and (max-width: 1024px) {
+    .card {
+        height: 477px;
+        width: 323px;
+    }
+}
+
 .cardImage {
     @include specials-bg-ilustration;
     border-radius: 32px;
@@ -24,6 +31,12 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .cardImage{
+        height: 290px;
+    }
+}
+
 .cardFooter {
     border: 1px solid $light3;
     border-radius: 0px 0px 24px 24px;
@@ -33,6 +46,12 @@
     justify-content: space-between;
     padding: 18px 24px;
     height: 26%;
+}
+
+@media screen and (max-width: 1024px) {
+    .cardFooter {
+        height: 160px;
+    }
 }
 
 .propsClass {
@@ -62,4 +81,23 @@
 
 .cardTitle {
     @include color-gradient-hover-text
+}
+
+@media screen and (max-width: 1024px) {
+    .titleContainer {
+        display: flex;
+        align-items: center;
+        > div {
+            background-color: $light;
+            border-radius: 8px;
+            margin-right: 16px;
+            height: 40px;
+            width: 40px;
+    
+            > img {
+                width: 100%;
+            }
+        }
+    
+    }
 }

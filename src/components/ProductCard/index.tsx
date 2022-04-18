@@ -90,7 +90,7 @@ export const ProductCard = ({
 					cost > points
 						? 'btn btn-xl btn-disabled btn-normal'
 						: 'btn btn-xl btn-hover btn-normal'
-				} ${loading && styles.processing}`}
+				} ${loading && styles.processing} ${styles.button}`}
 				disabled={cost > points}
 				onclick={() => redeemHandler()}
 			>

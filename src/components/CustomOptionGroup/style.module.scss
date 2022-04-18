@@ -10,10 +10,24 @@
     padding-left: 40px ;
     width: 656px;
 }
+@media screen and (max-width: 1024px) {
+    .container {
+        border-left: none;
+        padding-left: 0;
+        margin-right: 0;
+        width: 519px;
+        margin-top: 27px;
+    }
+}
 
 .sortText {
     color: $neutral2;
     text-transform: capitalize;
+}
+@media screen and (max-width: 1024px) {
+    .sortText {
+        display: none;
+    }
 }
 
 .innerText {
