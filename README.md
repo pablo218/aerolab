@@ -24,5 +24,7 @@ REACT_APP_TOKEN (a valid api token)
 REMEBER: Only the tablet and desktop version are ready, but yo can see the app in a mobile Phone if you turn the browser to desktop mode.
 
 aerolab-git-master-pablo218.vercel.app
+
 aerolab-pablo218.vercel.app
+
 aerolab-psi.vercel.app
