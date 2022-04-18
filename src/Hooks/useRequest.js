@@ -2,10 +2,10 @@ import { useCallback, useState } from "react";
 import { useMountedRef } from './useMountedRef';
 
 
-export const useRequest = (request)=>{
+export const useRequest = (request, onSucess, onerror)=>{
 
     const [data, setData] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false)
 
     const isMounted = useMountedRef();
@@ -15,9 +15,9 @@ export const useRequest = (request)=>{
         request(payload)
         .then(response => {
             if(isMounted.current) {
-                console.log('hook', response.data)
                 setData(response.data);
                 setError(null)
+                onSucess(response.data)
                 setLoading(false)
             }
         })
@@ -25,6 +25,7 @@ export const useRequest = (request)=>{
             if(isMounted.current) {
                 setError(error)
                 setLoading(false)
+                onerror()
             }
         })
     }, [request])

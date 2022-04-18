@@ -1,0 +1,21 @@
+@import 'scss/variables/mixings';
+@import 'scss/variables/colors';
+
+.selectContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.text {
+    color: $neutral2;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+.customSelect {
+    cursor: pointer;
+    width: 256px;
+}

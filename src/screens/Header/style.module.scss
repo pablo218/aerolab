@@ -1,0 +1,87 @@
+@import 'scss/variables/mixings';
+@import 'scss/variables/colors';
+
+.header {
+    background-image: url( '/assets/illustrations/single-wave-pattern.svg');
+    width: 100%;
+}
+
+.container {
+    @include grid-width;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    height: 942px;
+    padding: 0 80px 230px 80px;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+   @include color-gradient-hover-text;
+}
+
+.pretitle {
+    color: $thor;
+}
+
+.description {
+    color: $thor;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    text-align: center;
+}
+
+.imageContainer {
+    @include  brand-processing;
+    border-radius: 80px;
+    bottom: 100px;
+    height: 540px;
+    margin: 0 auto;
+    width: 626px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero {
+    width: 122%;
+}
+
+.specials {
+    @include specials-bg-section;
+    height: 528px;
+    width: 100%;
+}
+
+.cardsContainer {
+    @include grid-width;
+    align-items: flex-end;
+    display: flex;
+    height: 528px;
+    justify-content: stretch;
+    position: relative;
+}
+
+.browse {
+    transform: translate(75px, 29px) rotate(-3deg)
+}
+
+.choose {
+    z-index: 2;
+}
+
+.enjoy {
+    transform: translate(-75px, 29px) rotate(3deg);
+    z-index: 3;
+}

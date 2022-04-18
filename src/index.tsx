@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import 'scss/application.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './config/i18n';
+import i18next from 'i18next';
+i18next.changeLanguage('en');
 
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement

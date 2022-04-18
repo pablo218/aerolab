@@ -1,0 +1,16 @@
+@import 'scss/variables/mixings';
+@import 'scss/variables/colors';
+
+.nav {
+    @include grid-width;
+    align-items: center;
+    display: flex;
+    height: 128px;
+    justify-content: space-between;
+    padding: 0 80px;
+
+}
+
+.logo {
+    width: 100px
+}

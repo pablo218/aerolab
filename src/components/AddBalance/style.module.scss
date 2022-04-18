@@ -1,0 +1,113 @@
+@import 'scss/variables/mixings';
+@import 'scss/variables/colors';
+
+.balanceContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: fit-content
+}
+
+.coinAmount {
+    @include color-gradient-hover-text;
+    align-items: center;
+    border: 1px solid $light3;
+    border-radius: 16px;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+
+    width: 172px;
+}
+
+.totalPoints {
+    margin: 0 8px;
+}
+
+.chevronUp {
+    cursor: pointer;
+    transform: rotate(-90deg);
+}
+
+.chevronDown {
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.addPointsContainer {
+    background-color: $white;
+    border: 1px solid $neutral4;
+    border-radius: 16px;
+    position: absolute;
+    right: 0;
+    top: 55px;
+    height: 404px;
+    width: 312px;
+    z-index: 10;
+}
+
+.header {
+    border-bottom: 1px solid $neutral4;
+    padding: 16px 24px;
+    height: 55px;
+}
+
+.headerText {
+    text-transform: capitalize;
+}
+
+.body {
+    padding: 24px;
+}
+
+.creditCard {
+    background: $titlesBlack;
+    background-size: contain;
+    background-repeat: repeat-y;
+    border-radius: 8px;
+    color: $white;
+    padding: 16px;
+    height: 148px;
+    width: 264px;
+}
+
+.cardHeader {
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+    height: 38px;
+}
+
+.cardVendor {
+    text-transform: capitalize;
+}
+
+.cardLogo {
+    width: 24px;
+}
+
+.cardBody{
+    align-items: flex-end;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 230px;
+}
+
+.cardName {
+    text-transform: capitalize;
+}
+
+.addButton {
+    color: $white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.buttonLogo {
+    margin-right: 8px;
+}

@@ -1,0 +1,8 @@
+@import 'scss/variables/mixings';
+@import 'scss/variables/colors';
+
+.list {
+    @include grid-width;
+    display: flex;
+    flex-wrap: wrap;
+}

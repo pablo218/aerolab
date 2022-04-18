@@ -1,7 +1,27 @@
-@mixin brand-default {
+@mixin brand-processing {
     background: linear-gradient(102.47deg, rgba(23, 111, 235, 0.5) -5.34%, rgba(255, 128, 255, 0.5) 106.58%);
   }
 
 @mixin brand-hover {
     background: linear-gradient(102.47deg, #1667D9 -5.34%, #F279F2 106.58%)
+}
+
+@mixin specials-bg-ilustration {
+  background: linear-gradient(102.47deg, #7296EB -5.34%, #EAC0E9 106.58%, #EAC0E9 106.58%);
+};
+
+@mixin specials-bg-section {
+  background: linear-gradient(102.47deg, rgba(23, 111, 235, 0.5) -5.34%, rgba(255, 128, 255, 0.5) 106.58%);
+}
+
+@mixin color-gradient-hover-text {
+  background: linear-gradient(102.47deg, #1667D9 -5.34%, #F279F2 106.58%);
+  color: transparent;
+  background-clip: text;
+}
+
+@mixin grid-width {
+  width: 100%;
+  max-width: 1464px;
+  margin: 0 auto;
 }

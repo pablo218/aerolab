@@ -1,0 +1,83 @@
+@import 'scss/variables/mixings';
+@import 'scss/variables/colors';
+
+.btn {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+//Sizes
+.btn-xxl {
+    border-radius: 24px;
+    height: 80px;
+    text-transform: uppercase;
+    width: 318px;
+}
+
+.btn-xl {
+    border-radius: 16px;
+    text-transform: capitalize;
+    height: 59px;
+    width: 348px;
+}
+
+.btn-m {
+    border-radius: 16px;
+    text-transform: capitalize;
+    height: 51px;
+    width: 264px;
+}
+
+.btn-s {
+    border-radius: 12px;
+    text-transform: capitalize;
+    height: 43px;
+    width: 165px;
+}
+
+.bt-xs {
+    border-radius: 12px;
+    text-transform: capitalize;
+    height: 35px;
+    width: 85.33px;
+}
+
+
+//backgrounds
+.btn-hover {
+    @include brand-hover
+}
+
+.btn-processing {
+    @include brand-processing
+}
+
+.btn-disabled {
+    background-color: $neutral5;
+}
+
+.btn-notSelected {
+    background-color: $neutral7;
+}
+
+//text
+.btn-colored {
+    @include color-gradient-hover-text;
+}
+
+.btn-normal {
+    color: $white;
+}
+
+.btn-disabled {
+    color: $neutral2;
+}

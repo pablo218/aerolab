@@ -1,0 +1,51 @@
+@import 'scss/variables/mixings';
+@import 'scss/variables/colors';
+
+
+
+.messageBox {
+    background-color: $white;
+    position: fixed;
+    top: 80px;
+    left: 80px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 27px;
+    width: 532px;
+    z-index: 200;
+}
+
+.messageBoxSuccess {
+    border: 2px solid $green;
+}
+
+.messageBoxError {
+    border: 2px solid $redError;
+    border-radius: 12px;
+}
+
+
+.systemStatus {
+    margin-right: 15px;
+}
+
+.message {
+    color: $neutral2;
+    text-transform: capitalize;
+}
+
+.extraData {
+    color: $titlesBlack;
+}
+
+.iconAndMessage {
+    display: flex;
+    align-items: center;
+}
+
+.close {
+    cursor: pointer;
+}

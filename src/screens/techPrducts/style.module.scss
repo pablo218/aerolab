@@ -1,0 +1,15 @@
+@import 'scss/variables/mixings';
+@import 'scss/variables/colors';
+
+.techSection {
+    padding: 235px 0;
+}
+
+.techTitle {
+    @include grid-width;
+    margin-bottom: 43px;
+}
+
+.tech {
+    @include color-gradient-hover-text
+}

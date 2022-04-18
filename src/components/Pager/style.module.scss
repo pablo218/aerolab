@@ -1,0 +1,53 @@
+@import 'scss/variables/mixings';
+@import 'scss/variables/colors';
+
+
+.pager {
+    border: 1px solid $neutral4;
+    border-radius: 8px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-transform: capitalize;
+    height: 50px;
+    width: 256px;
+}
+
+.pageNumber {
+    @include color-gradient-hover-text;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+.chevronL {
+    cursor: pointer;
+    transform: rotate(-180deg);
+}
+
+.text {
+    color: $thor;
+    text-transform: capitalize;
+}
+
+.chevronR {
+    cursor: pointer;
+}
+
+.chevronContariner {
+    background-color: $light;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+}
+
+.chevronDisabled {
+    background-color: $neutral5;
+
+    > img {
+        cursor: not-allowed;
+    }
+}

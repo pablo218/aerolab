@@ -2,26 +2,37 @@
 
 @import './variables/colors.scss';
 
-.titles_{
+.titles {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $titlesBlack;
+    line-height: 80%;
     &.l1 {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 900;
         font-size: 200px;
-        text-transform: uppercase;
-        color: $titlesBlack;
-        line-height: 80%;
+    }
+
+    &.l2 {
+        font-size: 48px;
+    }
+
+    &.l3 {
+        font-size: 32px;
     }
 }
 
-.text_ {
+.text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 150%;
     &.l1 {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
         font-size: 18px;
-        color: $thor;
-        text-transform: uppercase;
-        line-height: 150%;
+        
+    }
+    &.l2 {
+        font-size: 14px;
     }
 }

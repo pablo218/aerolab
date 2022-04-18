@@ -1,0 +1,59 @@
+@import 'scss/variables/mixings';
+@import 'scss/variables/colors';
+
+.container {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 348px;
+}
+
+.card {
+    border: 1px solid $light3;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    width: 348px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 345px;
+}
+
+.image {
+    width: 100%;
+}
+
+.description {
+    align-items: flex-start;
+    border-top: 1px solid $light3;
+    height: 88px;
+    padding: 16px 24px;
+}
+
+.name {
+   text-transform: capitalize;
+}
+.category {
+    color: $neutral2;
+}
+
+.processing {
+    background: linear-gradient(102.47deg, rgba(23, 111, 235, 0.5) -5.34%, rgba(255, 128, 255, 0.5) 106.58%);
+}
+
+.mainText {
+    &:hover {
+        display: none
+    }
+}
+
+.interact {
+    display: none;
+
+    &:hover {
+        border: 1px solid red;
+        display: inline;
+    }
+}
